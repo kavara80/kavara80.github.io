@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Grid konten media sosial dengan ikon play">
+  <defs>
+    <linearGradient id="scBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080F1E"/><stop offset="1" stop-color="#101E38"/>
+    </linearGradient>
+    <linearGradient id="scT1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24417A"/><stop offset="1" stop-color="#12203C"/></linearGradient>
+    <linearGradient id="scT2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#173A6B"/><stop offset="1" stop-color="#0D1A30"/></linearGradient>
+    <linearGradient id="scT3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#125A70"/><stop offset="1" stop-color="#0C2333"/></linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#scBg)"/>
+
+  <!-- feed frame -->
+  <rect x="56" y="48" width="688" height="404" rx="16" fill="#0C1526" stroke="#22355C"/>
+  <rect x="56" y="48" width="688" height="46" rx="16" fill="#101C36"/>
+  <rect x="56" y="78" width="688" height="16" fill="#101C36"/>
+  <text x="84" y="78" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#EAEEF7">Feed · Content Plan</text>
+  <g fill="#7CE8FF" opacity=".6"><circle cx="700" cy="71" r="3.5"/><circle cx="712" cy="71" r="3.5"/></g>
+
+  <!-- tiles -->
+  <g>
+    <rect x="84" y="118" width="196" height="146" rx="10" fill="url(#scT1)"/>
+    <rect x="302" y="118" width="196" height="146" rx="10" fill="url(#scT2)"/>
+    <rect x="520" y="118" width="196" height="146" rx="10" fill="url(#scT3)"/>
+    <rect x="84" y="282" width="196" height="146" rx="10" fill="url(#scT2)"/>
+    <rect x="302" y="282" width="196" height="146" rx="10" fill="url(#scT3)"/>
+    <rect x="520" y="282" width="196" height="146" rx="10" fill="url(#scT1)"/>
+  </g>
+
+  <!-- tile details -->
+  <g fill="#7CE8FF" opacity=".45">
+    <circle cx="150" cy="170" r="20"/>
+    <path d="M132 240c3-26 9-40 18-40s15 14 18 40Z"/>
+    <path d="M540 170l44-22v44Z" opacity=".8"/>
+    <path d="M132 400c3-26 9-40 18-40s15 14 18 40Z"/>
+    <rect x="540" y="330" width="70" height="8" rx="4"/>
+    <rect x="540" y="348" width="46" height="8" rx="4"/>
+  </g>
+
+  <!-- play badges -->
+  <g>
+    <circle cx="182" cy="118" r="0" fill="none"/>
+    <g transform="translate(182 191)">
+      <circle r="21" fill="#060A14" opacity=".55"/><path d="M-6 -10l17 10-17 10Z" fill="#7CE8FF"/>
+    </g>
+    <g transform="translate(400 191)">
+      <circle r="21" fill="#060A14" opacity=".55"/><path d="M-6 -10l17 10-17 10Z" fill="#7CE8FF"/>
+    </g>
+    <g transform="translate(618 355)">
+      <circle r="21" fill="#060A14" opacity=".55"/><path d="M-6 -10l17 10-17 10Z" fill="#7CE8FF"/>
+    </g>
+  </g>
+
+  <!-- engagement -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#9FB4D8">
+    <text x="98" y="282" dy="0">Jadwal</text>
+    <text x="316" y="282">Reels</text>
+    <text x="534" y="282">Story</text>
+    <text x="98" y="446">Carousel</text>
+    <text x="316" y="446">Highlight</text>
+    <text x="534" y="446">Behind the scene</text>
+  </g>
+</svg>

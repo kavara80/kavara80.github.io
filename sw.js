@@ -2,7 +2,7 @@
    sw.js — offline shell
    Hanya didaftarkan di production (https), lihat main.js
    ========================================================= */
-var CACHE = "kavara-portfolio-v2";
+var CACHE = "kavara-portfolio-v3";
 
 var SHELL = [
   "./",
@@ -15,13 +15,14 @@ var SHELL = [
   "assets/favicon.svg",
   "assets/icon-192.png",
   "assets/icon-512.png",
-  "assets/og-image.png",
-  "assets/projects/lunaria.svg",
-  "assets/projects/orbit.svg",
-  "assets/projects/selene.svg",
-  "assets/projects/tidepool.svg",
-  "assets/projects/nocturne.svg",
-  "assets/projects/phase.svg"
+  "assets/og-image.jpg",
+  "assets/avatar.jpg",
+  "assets/projects/wcc.svg",
+  "assets/projects/wedding-edit.svg",
+  "assets/projects/wedding-video.svg",
+  "assets/projects/wedding-content.svg",
+  "assets/projects/social-content.svg",
+  "assets/projects/graphic-design.svg"
 ];
 
 self.addEventListener("install", function (event) {

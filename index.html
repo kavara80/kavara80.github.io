@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- GANTI: nama, domain, dan deskripsi — juga di OG/Twitter/JSON-LD di bawah -->
-<title>Kavara — Frontend Developer</title>
-<meta name="description" content="Portfolio Kavara, frontend developer di Jakarta — antarmuka web yang cepat, aksesibel, dan nyaman dipakai." />
-<meta name="author" content="Kavara" />
-<meta name="theme-color" content="#070A14" />
+<title>Ardinuari Angga Chavara — Video Editor &amp; Videographer</title>
+<meta name="description" content="Portfolio Ardinuari Angga Chavara (Kavara) — video editor dan videographer di Pontianak. Video wedding, content creation, desain grafis, dan social media management." />
+<meta name="author" content="Ardinuari Angga Chavara" />
+<meta name="theme-color" content="#060A14" />
 <script>
   // Terapkan tema & bahasa tersimpan sebelum render (hindari flash),
   // dan tandai bahwa JS aktif supaya animasi reveal aman.
@@ -20,7 +19,7 @@
       var l = localStorage.getItem("nk-lang");
       if (l === "id" || l === "en") root.setAttribute("lang", l);
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta && t === "light") meta.setAttribute("content", "#FBF7EF");
+      if (meta && t === "light") meta.setAttribute("content", "#F5F8FE");
     } catch (e) { /* ignore */ }
     // Jaring pengaman: kalau main.js gagal dimuat, .reveal jangan tinggal tak terlihat
     setTimeout(function () {
@@ -33,20 +32,20 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Kavara" />
-<meta property="og:title" content="Kavara — Frontend Developer" />
-<meta property="og:description" content="Portfolio Kavara, frontend developer di Jakarta — antarmuka web yang cepat, aksesibel, dan nyaman dipakai." />
+<meta property="og:title" content="Ardinuari Angga Chavara — Video Editor &amp; Videographer" />
+<meta property="og:description" content="Portfolio Ardinuari Angga Chavara (Kavara) — video editor dan videographer di Pontianak. Video wedding, content creation, desain grafis, dan social media management." />
 <meta property="og:url" content="https://kavara80.github.io/" />
-<meta property="og:image" content="https://kavara80.github.io/assets/og-image.png" />
+<meta property="og:image" content="https://kavara80.github.io/assets/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Kavara — Frontend Developer" />
+<meta property="og:image:alt" content="Kavara — Video Editor &amp; Videographer" />
 <meta property="og:locale" content="id_ID" />
 <meta property="og:locale:alternate" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Kavara — Frontend Developer" />
-<meta name="twitter:description" content="Portfolio Kavara, frontend developer di Jakarta — antarmuka web yang cepat, aksesibel, dan nyaman dipakai." />
-<meta name="twitter:image" content="https://kavara80.github.io/assets/og-image.png" />
-<meta name="twitter:image:alt" content="Kavara — Frontend Developer" />
+<meta name="twitter:title" content="Ardinuari Angga Chavara — Video Editor &amp; Videographer" />
+<meta name="twitter:description" content="Portfolio Ardinuari Angga Chavara (Kavara) — video editor dan videographer di Pontianak. Video wedding, content creation, desain grafis, dan social media management." />
+<meta name="twitter:image" content="https://kavara80.github.io/assets/og-image.jpg" />
+<meta name="twitter:image:alt" content="Kavara — Video Editor &amp; Videographer" />
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <link rel="apple-touch-icon" href="assets/icon-192.png" />
@@ -62,12 +61,28 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Kavara",
-  "jobTitle": "Frontend Developer",
+  "name": "Ardinuari Angga Chavara",
+  "alternateName": "Kavara",
+  "jobTitle": "Video Editor & Videographer",
   "url": "https://kavara80.github.io/",
-  "image": "https://kavara80.github.io/assets/og-image.png",
+  "image": "https://kavara80.github.io/assets/og-image.jpg",
+  "email": "ardinuariangga@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pontianak",
+    "addressRegion": "Kalimantan Barat",
+    "addressCountry": "ID"
+  },
+  "knowsAbout": [
+    "Video Editing",
+    "Videography",
+    "Content Creation",
+    "Graphic Design",
+    "Social Media Management",
+    "Wedding Videography"
+  ],
   "sameAs": [
-    "https://github.com/kavara80"
+    "https://instagram.com/by_kavara01"
   ]
 }
 </script>
@@ -82,7 +97,8 @@
   <div class="container header__inner">
     <a class="brand" href="#top" aria-label="Kavara — beranda">
       <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M21 5a11 11 0 1 0 0 22 12.5 12.5 0 0 1 0-22Z" fill="currentColor"/>
+        <path fill-rule="evenodd" d="M16 2a14 14 0 1 0 0 28 14 14 0 0 0 0-28Zm0 3.4a10.6 10.6 0 1 1 0 21.2 10.6 10.6 0 0 1 0-21.2Z"/>
+        <path d="M13.2 10.4v11.2L22.6 16Z"/>
       </svg>
       <span class="brand__text">Kavara</span>
     </a>
@@ -124,17 +140,16 @@
     <div class="hero__copy">
       <span class="badge">
         <span class="badge__dot" aria-hidden="true"></span>
-        <span data-i18n="hero.badge">Terbuka untuk peluang</span>
+        <span data-i18n="hero.badge">Freelance · Open to Projects</span>
       </span>
 
       <h1 class="hero__title">
         <span class="hero__greeting" data-i18n="hero.greeting">Halo, saya</span>
-        <!-- GANTI: nama kamu -->
         <span class="hero__name">Kavara</span>
       </h1>
 
       <p class="hero__role">
-        <span class="sr-only" data-i18n="hero.roleSr">Frontend Developer</span>
+        <span class="sr-only" data-i18n="hero.roleSr">Video Editor</span>
         <span class="hero__role-prefix" aria-hidden="true">&lt;</span>
         <span id="typing" class="hero__typing" aria-hidden="true"></span>
         <span class="caret" aria-hidden="true"></span>
@@ -142,12 +157,12 @@
       </p>
 
       <p class="hero__tagline" data-i18n="hero.tagline">
-        Saya membangun antarmuka web yang cepat, aksesibel, dan enak dipakai — dengan detail kecil yang bikin orang betah.
+        Saya merangkai momen jadi cerita lewat visual — video wedding, konten media sosial, dan desain yang bikin orang berhenti scroll.
       </p>
 
       <div class="hero__cta">
         <a class="btn btn--primary" href="#projects">
-          <span data-i18n="hero.ctaProjects">Lihat Project</span>
+          <span data-i18n="hero.ctaProjects">Lihat Karya</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a class="btn btn--ghost" href="assets/cv.pdf" download>
@@ -157,9 +172,8 @@
       </div>
 
       <ul class="hero__socials" aria-label="Sosial media">
-        <!-- GANTI: URL GitHub kamu + file CV di assets/cv.pdf -->
-        <li><a class="social" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.9A5.4 5.4 0 0 0 18.9 4a5 5 0 0 0-.1-3.7s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C5.2-.1 4 .3 4 .3A5 5 0 0 0 3.9 4 5.4 5.4 0 0 0 2.4 8.6c0 5.4 3.2 6.6 6.2 6.9a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+        <li><a class="social" href="https://instagram.com/by_kavara01" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
         </a></li>
         <li><a class="social" href="assets/cv.pdf" download aria-label="Download CV">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
@@ -177,8 +191,8 @@
           <svg class="moon" id="moonSvg" viewBox="0 0 200 200" role="img" aria-label="Fase bulan hari ini">
             <defs>
               <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="55%" stop-color="#E8C77B" stop-opacity=".35"/>
-                <stop offset="100%" stop-color="#E8C77B" stop-opacity="0"/>
+                <stop offset="55%" stop-color="#3B6CF6" stop-opacity=".40"/>
+                <stop offset="100%" stop-color="#3B6CF6" stop-opacity="0"/>
               </radialGradient>
               <mask id="moonMask">
                 <circle cx="100" cy="100" r="52" fill="#fff"/>
@@ -186,15 +200,15 @@
               </mask>
             </defs>
             <circle cx="100" cy="100" r="95" fill="url(#moonGlow)"/>
-            <circle cx="100" cy="100" r="52" fill="#F3DFA8" mask="url(#moonMask)"/>
-            <circle cx="100" cy="100" r="52" fill="none" stroke="#E8C77B" stroke-opacity=".25"/>
+            <circle cx="100" cy="100" r="52" fill="#CFE4FF" mask="url(#moonMask)"/>
+            <circle cx="100" cy="100" r="52" fill="none" stroke="#7CE8FF" stroke-opacity=".35"/>
           </svg>
           <span class="moon-card__star moon-card__star--1" aria-hidden="true"></span>
           <span class="moon-card__star moon-card__star--2" aria-hidden="true"></span>
           <span class="moon-card__star moon-card__star--3" aria-hidden="true"></span>
         </div>
         <div class="moon-card__meta">
-          <span class="moon-card__label" data-i18n="hero.moon">Fase bulan hari ini</span>
+          <span class="moon-card__label" data-i18n="hero.moon">Blue moon malam ini</span>
           <strong class="moon-card__phase" id="moonPhase">—</strong>
           <span class="moon-card__date" id="moonDate">—</span>
           <div class="moon-card__bar"><span id="moonIllum"></span></div>
@@ -214,20 +228,20 @@
 <section class="stats" aria-label="Ringkasan">
   <div class="container stats__grid">
     <div class="stat reveal">
-      <span class="stat__num" data-count="3">3</span>
+      <span class="stat__num" data-count="3" data-suffix="+">3+</span>
       <span class="stat__label" data-i18n="stats.years">Tahun pengalaman</span>
     </div>
     <div class="stat reveal">
-      <span class="stat__num" data-count="24" data-suffix="+">24+</span>
-      <span class="stat__label" data-i18n="stats.projects">Project selesai</span>
+      <span class="stat__num" data-count="6">6</span>
+      <span class="stat__label" data-i18n="stats.services">Layanan kreatif</span>
     </div>
     <div class="stat reveal">
-      <span class="stat__num" data-count="12" data-suffix="+">12+</span>
-      <span class="stat__label" data-i18n="stats.clients">Klien</span>
+      <span class="stat__num" data-count="1">1</span>
+      <span class="stat__label" data-i18n="stats.brands">Akun dibangun dari nol</span>
     </div>
     <div class="stat reveal">
-      <span class="stat__num" data-count="14">14</span>
-      <span class="stat__label" data-i18n="stats.stack">Teknologi dikuasai</span>
+      <span class="stat__num">&lt;24</span>
+      <span class="stat__label" data-i18n="stats.response">Jam waktu respons</span>
     </div>
   </div>
 </section>
@@ -235,7 +249,7 @@
 <!-- ================= MARQUEE ================= -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track" id="marqueeTrack">
-    <span>HTML</span><i></i><span>CSS</span><i></i><span>JavaScript</span><i></i><span>TypeScript</span><i></i><span>React</span><i></i><span>Next.js</span><i></i><span>Tailwind</span><i></i><span>Node.js</span><i></i><span>Figma</span><i></i><span>Vite</span><i></i><span>Git</span><i></i><span>Accessibility</span><i></i>
+    <span>Video Editing</span><i></i><span>Videography</span><i></i><span>Wedding Films</span><i></i><span>Storytelling</span><i></i><span>Content Creation</span><i></i><span>Reels</span><i></i><span>Graphic Design</span><i></i><span>Social Media</span><i></i><span>Color Grading</span><i></i><span>Photography</span><i></i><span>Creative Direction</span><i></i><span>Behind the Scene</span><i></i>
   </div>
 </div>
 
@@ -244,43 +258,34 @@
   <div class="container about">
     <div class="about__media reveal">
       <div class="avatar">
-        <svg viewBox="0 0 240 240" aria-hidden="true">
-          <defs>
-            <linearGradient id="avGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#1A2138"/><stop offset="1" stop-color="#0B1020"/>
-            </linearGradient>
-          </defs>
-          <circle cx="120" cy="120" r="120" fill="url(#avGrad)"/>
-          <circle cx="120" cy="98" r="42" fill="#E8C77B" opacity=".85"/>
-          <path d="M120 150c-46 0-74 26-80 62a120 120 0 0 0 160 0c-6-36-34-62-80-62Z" fill="#E8C77B" opacity=".55"/>
-        </svg>
+        <img src="assets/avatar.jpg" alt="Foto Ardinuari Angga Chavara" width="640" height="640" />
         <span class="avatar__ring" aria-hidden="true"></span>
       </div>
-      <span class="about__note" data-i18n="about.avatarNote">Jakarta · GMT+7</span>
+      <span class="about__note" data-i18n="about.avatarNote">Pontianak · WIB (GMT+7)</span>
     </div>
 
     <div class="about__body">
       <p class="kicker reveal" data-i18n="about.kicker">Tentang</p>
-      <h2 class="section__title reveal" data-i18n="about.title">Membangun detail kecil yang terasa besar.</h2>
+      <h2 class="section__title reveal" data-i18n="about.title">Momen lewat, cerita tinggal.</h2>
       <p class="section__lead reveal" data-i18n="about.p1">
-        Saya Frontend Developer yang fokus pada antarmuka yang bersih, cepat, dan mudah dipahami. Suka ngulik animasi halus, design system, dan hal-hal kecil yang bikin pengalaman terasa lebih hidup.
+        Saya Ardinuari Angga Chavara — video editor dan videographer yang berfokus pada konten visual, khususnya video wedding dan media sosial. Saya terbiasa mengedit video, mengolah footage, dan membuat desain sesuai kebutuhan.
       </p>
       <p class="section__lead reveal" data-i18n="about.p2">
-        Selain coding, saya sering menerjemahkan desain Figma jadi implementasi pixel-perfect — dan sesekali ikut merancang alur UX-nya.
+        Saya juga dipercaya mengelola akun media sosial: merencanakan konten, menjaga konsistensi, dan membangun akun dari nol. Selalu terbuka untuk mempelajari hal baru dan mengembangkan kreativitas di setiap proyek.
       </p>
 
       <dl class="facts reveal">
         <div class="fact">
           <dt data-i18n="about.location">Lokasi</dt>
-          <dd data-i18n="about.locationVal">Jakarta, Indonesia</dd>
+          <dd data-i18n="about.locationVal">Pontianak, Kalimantan Barat</dd>
         </div>
         <div class="fact">
           <dt data-i18n="about.focus">Fokus</dt>
-          <dd data-i18n="about.focusVal">Frontend &amp; Design System</dd>
+          <dd data-i18n="about.focusVal">Video Editing &amp; Content Creation</dd>
         </div>
         <div class="fact">
           <dt data-i18n="about.status">Status</dt>
-          <dd><span class="dot" aria-hidden="true"></span><span data-i18n="about.statusVal">Terbuka untuk peluang</span></dd>
+          <dd><span class="dot" aria-hidden="true"></span><span data-i18n="about.statusVal">Freelance / Open to Projects</span></dd>
         </div>
       </dl>
     </div>
@@ -292,41 +297,41 @@
   <div class="container">
     <header class="section__head">
       <p class="kicker reveal" data-i18n="skills.kicker">Keahlian</p>
-      <h2 class="section__title reveal" data-i18n="skills.title">Toolkit yang saya pakai tiap hari.</h2>
+      <h2 class="section__title reveal" data-i18n="skills.title">Yang saya kerjakan tiap hari.</h2>
       <p class="section__lead reveal" data-i18n="skills.subtitle">
-        Bukan daftar panjang — hanya hal yang benar-benar saya kerjakan dan terus asah.
+        Bukan daftar panjang — hanya hal yang benar-benar saya pegang dari brief sampai hasil akhir.
       </p>
     </header>
 
     <div class="skills">
-      <article class="skill reveal" style="--level:95">
-        <div class="skill__top"><h3>HTML &amp; CSS</h3><span class="skill__pct">95%</span></div>
-        <p class="skill__desc" data-i18n="skills.html">Semantic markup, layout modern, animasi CSS.</p>
+      <article class="skill reveal" style="--level:92">
+        <div class="skill__top"><h3>Video Editing</h3><span class="skill__pct">92%</span></div>
+        <p class="skill__desc" data-i18n="skills.video">Penyuntingan video wedding, reels, dan konten media sosial.</p>
+        <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
+      </article>
+      <article class="skill reveal" style="--level:88">
+        <div class="skill__top"><h3>Videography</h3><span class="skill__pct">88%</span></div>
+        <p class="skill__desc" data-i18n="skills.videography">Pengambilan gambar, komposisi, dan pencahayaan di lapangan.</p>
         <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
       </article>
       <article class="skill reveal" style="--level:90">
-        <div class="skill__top"><h3>JavaScript</h3><span class="skill__pct">90%</span></div>
-        <p class="skill__desc" data-i18n="skills.js">ES2023, DOM API, performance, testing.</p>
+        <div class="skill__top"><h3>Content Creation</h3><span class="skill__pct">90%</span></div>
+        <p class="skill__desc" data-i18n="skills.content">Ide, konsep, sampai eksekusi konten yang relatable.</p>
+        <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
+      </article>
+      <article class="skill reveal" style="--level:82">
+        <div class="skill__top"><h3>Graphic Design</h3><span class="skill__pct">82%</span></div>
+        <p class="skill__desc" data-i18n="skills.design">Desain feed, poster, dan materi promosi.</p>
         <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
       </article>
       <article class="skill reveal" style="--level:85">
-        <div class="skill__top"><h3>React</h3><span class="skill__pct">85%</span></div>
-        <p class="skill__desc" data-i18n="skills.react">Hooks, state management, komponen reusable.</p>
+        <div class="skill__top"><h3>Social Media</h3><span class="skill__pct">85%</span></div>
+        <p class="skill__desc" data-i18n="skills.social">Perencanaan konten, jadwal posting, dan pengembangan akun.</p>
         <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
       </article>
-      <article class="skill reveal" style="--level:80">
-        <div class="skill__top"><h3>TypeScript</h3><span class="skill__pct">80%</span></div>
-        <p class="skill__desc" data-i18n="skills.ts">Tipe generik, utility types, strict mode.</p>
-        <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
-      </article>
-      <article class="skill reveal" style="--level:75">
-        <div class="skill__top"><h3>UI / UX Design</h3><span class="skill__pct">75%</span></div>
-        <p class="skill__desc" data-i18n="skills.ui">Figma, design token, prototyping.</p>
-        <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
-      </article>
-      <article class="skill reveal" style="--level:70">
-        <div class="skill__top"><h3>Node.js</h3><span class="skill__pct">70%</span></div>
-        <p class="skill__desc" data-i18n="skills.node">REST API, Express, integrasi frontend.</p>
+      <article class="skill reveal" style="--level:87">
+        <div class="skill__top"><h3>Wedding Content</h3><span class="skill__pct">87%</span></div>
+        <p class="skill__desc" data-i18n="skills.wedding">Konten wedding: behind the scene sampai highlight.</p>
         <div class="bar" aria-hidden="true"><span class="bar__fill"></span><span class="bar__moon"></span></div>
       </article>
     </div>
@@ -338,200 +343,188 @@
   <div class="container">
     <header class="section__head">
       <p class="kicker reveal" data-i18n="projects.kicker">Karya</p>
-      <h2 class="section__title reveal" data-i18n="projects.title">Project pilihan.</h2>
-      <p class="section__lead reveal" data-i18n="projects.subtitle">Beberapa hal yang saya bangun dari nol — dari desain sampai deploy.</p>
+      <h2 class="section__title reveal" data-i18n="projects.title">Karya pilihan.</h2>
+      <p class="section__lead reveal" data-i18n="projects.subtitle">Sebagian pekerjaan yang saya pegang dari brief sampai hasil akhir.</p>
     </header>
 
     <div class="filters reveal" role="group" aria-label="Filter project">
       <button class="chip is-active" type="button" data-filter="all" data-i18n="projects.all">Semua</button>
-      <button class="chip" type="button" data-filter="app" data-i18n="projects.app">Web App</button>
-      <button class="chip" type="button" data-filter="landing" data-i18n="projects.landing">Landing Page</button>
-      <button class="chip" type="button" data-filter="experiment" data-i18n="projects.experiment">Eksperimen</button>
+      <button class="chip" type="button" data-filter="video" data-i18n="projects.video">Video</button>
+      <button class="chip" type="button" data-filter="social" data-i18n="projects.social">Sosial Media</button>
+      <button class="chip" type="button" data-filter="design" data-i18n="projects.design">Desain</button>
     </div>
 
     <div class="projects" id="projectGrid">
-      <!-- GANTI: tiap project — gambar, judul, deskripsi, link repo/live, dan isi <template> -->
       <!-- ===== Project 1 ===== -->
-      <article class="card reveal" data-category="app">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/lunaria.svg" data-caption="Lunaria — SaaS Dashboard">
-          <img src="assets/projects/lunaria.svg" alt="Tampilan dashboard Lunaria" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="social">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/wcc.svg" data-caption="WCC — Social Media Account Development">
+          <img src="assets/projects/wcc.svg" alt="Mockup feed Instagram akun WCC" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.app">Web App</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">Lunaria — SaaS Dashboard</h3>
-          <p class="card__desc" data-i18n="p1.d">Dashboard analytics untuk tim produk dengan visualisasi data real-time.</p>
-          <ul class="tags"><li>React</li><li>TypeScript</li><li>D3</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2025</span></div>
+          <h3 class="card__title">WCC — Social Media Account Development</h3>
+          <p class="card__desc" data-i18n="p1.d">Membangun akun Wedding Content Creator dari nol sampai punya identitas dan audiens.</p>
+          <ul class="tags"><li>Instagram</li><li>Content Plan</li><li>Branding</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p1" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p1.long">Dashboard internal untuk memantau metrik produk. Saya membangun design system-nya, chart interaktif, dan mode gelap yang konsisten di seluruh halaman.</p>
+          <p data-i18n="p1.long">Dipercaya mengelola akun Wedding Content Creator: menyusun identitas visual, merencanakan konten, dan menjaga konsistensi posting sampai akun berkembang dari nol.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p1.role">Frontend Lead — arsitektur komponen &amp; implementasi UI</p>
+          <p data-i18n="p1.role">Social Media Manager</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p1.f1">Design system dengan 40+ komponen</li>
-            <li data-i18n="p1.f2">Chart interaktif yang tetap ringan di 10k data point</li>
-            <li data-i18n="p1.f3">Tema gelap/terang dengan kontras tervalidasi</li>
+            <li data-i18n="p1.f1">Perencanaan konten dan kalender posting</li>
+            <li data-i18n="p1.f2">Identitas visual feed yang konsisten</li>
+            <li data-i18n="p1.f3">Pengembangan akun dari nol sampai berkembang</li>
           </ul>
         </template>
       </article>
 
       <!-- ===== Project 2 ===== -->
-      <article class="card reveal" data-category="landing">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/orbit.svg" data-caption="Orbit — Climate Startup">
-          <img src="assets/projects/orbit.svg" alt="Tampilan landing page Orbit" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="video">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/wedding-edit.svg" data-caption="Wedding Video Editing">
+          <img src="assets/projects/wedding-edit.svg" alt="Tampilan timeline editing video wedding" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.landing">Landing Page</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">Orbit — Climate Startup</h3>
-          <p class="card__desc" data-i18n="p2.d">Landing page untuk startup iklim, fokus pada cerita dan konversi.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>GSAP</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.video">Video</span><span class="card__year">2025</span></div>
+          <h3 class="card__title">Wedding Video Editing</h3>
+          <p class="card__desc" data-i18n="p2.d">Editing video wedding: alur cerita, color grading, dan sinkronisasi musik.</p>
+          <ul class="tags"><li>Editing</li><li>Color Grading</li><li>Storytelling</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p2" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p2.long">Satu halaman dengan narasi bertahap: masalah, solusi, bukti, lalu ajakan. Animasi scroll dibuat ringan supaya tetap 60fps di ponsel kelas menengah.</p>
+          <p data-i18n="p2.long">Mengolah footage wedding jadi film pendek yang enak ditonton: memilih momen, menyusun alur, memberi color grading, dan menyelaraskan musik dengan tempo cerita.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p2.role">Designer &amp; Frontend Developer</p>
+          <p data-i18n="p2.role">Video Editor</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p2.f1">Ilustrasi &amp; layout kustom tanpa template</li>
-            <li data-i18n="p2.f2">Animasi scroll dengan IntersectionObserver</li>
-            <li data-i18n="p2.f3">Skor Lighthouse 98 di mobile</li>
+            <li data-i18n="p2.f1">Menyusun alur cerita dari footage acara</li>
+            <li data-i18n="p2.f2">Color grading dan sinkronisasi audio</li>
+            <li data-i18n="p2.f3">Revisi sesuai brief klien</li>
           </ul>
         </template>
       </article>
 
       <!-- ===== Project 3 ===== -->
-      <article class="card reveal" data-category="app">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/selene.svg" data-caption="Selene — Mobile Banking">
-          <img src="assets/projects/selene.svg" alt="Tampilan aplikasi mobile Selene" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="video">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/wedding-video.svg" data-caption="Wedding Videography">
+          <img src="assets/projects/wedding-video.svg" alt="Tampilan viewfinder kamera saat pengambilan gambar wedding" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.app">Web App</span><span class="card__year">2024</span></div>
-          <h3 class="card__title">Selene — Mobile Banking</h3>
-          <p class="card__desc" data-i18n="p3.d">Aplikasi banking mobile-first dengan alur transfer yang sederhana.</p>
-          <ul class="tags"><li>React</li><li>PWA</li><li>Figma</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.video">Video</span><span class="card__year">2025</span></div>
+          <h3 class="card__title">Wedding Videography</h3>
+          <p class="card__desc" data-i18n="p3.d">Pengambilan gambar wedding langsung di lapangan sebagai videografer.</p>
+          <ul class="tags"><li>Videography</li><li>On-site</li><li>Wedding</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p3" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p3.long">Proyek banking dengan fokus pada kejelasan: jumlah langkah transfer dipotong dari 6 jadi 3, dan setiap status punya umpan balik yang jelas.</p>
+          <p data-i18n="p3.long">Terlibat langsung di lapangan: menyiapkan alat, mengambil gambar acara, dan memastikan momen penting terekam tanpa mengganggu jalannya acara.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p3.role">Frontend Developer &amp; UX Researcher</p>
+          <p data-i18n="p3.role">Videographer</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p3.f1">Riset 8 pengguna untuk menyederhanakan alur</li>
-            <li data-i18n="p3.f2">PWA dengan mode offline untuk cek saldo terakhir</li>
-            <li data-i18n="p3.f3">Komponen form dengan validasi aksesibel</li>
+            <li data-i18n="p3.f1">Setup kamera dan audio sebelum acara</li>
+            <li data-i18n="p3.f2">Pengambilan gambar acara dan portrait</li>
+            <li data-i18n="p3.f3">Koordinasi dengan tim dan klien</li>
           </ul>
         </template>
       </article>
 
       <!-- ===== Project 4 ===== -->
-      <article class="card reveal" data-category="experiment">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/tidepool.svg" data-caption="Tidepool — Design System">
-          <img src="assets/projects/tidepool.svg" alt="Tampilan dokumentasi design system Tidepool" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="social">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/wedding-content.svg" data-caption="Wedding Content Creation">
+          <img src="assets/projects/wedding-content.svg" alt="Tiga frame konten wedding vertikal" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.experiment">Eksperimen</span><span class="card__year">2024</span></div>
-          <h3 class="card__title">Tidepool — Design System</h3>
-          <p class="card__desc" data-i18n="p4.d">Design system open-source dengan dokumentasi interaktif.</p>
-          <ul class="tags"><li>CSS</li><li>Web Components</li><li>Storybook</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2026</span></div>
+          <h3 class="card__title">Wedding Content Creation</h3>
+          <p class="card__desc" data-i18n="p4.d">Konten wedding siap posting: behind the scene, reels, dan highlight.</p>
+          <ul class="tags"><li>Reels</li><li>TikTok</li><li>Wedding</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p4" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p4.long">Eksperimen membuat design system tanpa framework: token CSS, komponen Web Components, dan halaman dokumentasi yang bisa dicoba langsung.</p>
+          <p data-i18n="p4.long">Membuat konten pendek dari momen wedding — dari behind the scene sampai highlight — supaya pasangan punya cerita yang bisa langsung dibagikan.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p4.role">Konsep, desain, dan implementasi</p>
+          <p data-i18n="p4.role">Content Creator</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p4.f1">Token warna, tipografi, dan spacing</li>
-            <li data-i18n="p4.f2">Komponen aksesibel dengan keyboard support</li>
-            <li data-i18n="p4.f3">Playground interaktif di halaman dokumentasi</li>
+            <li data-i18n="p4.f1">Konsep konten vertikal untuk reels dan TikTok</li>
+            <li data-i18n="p4.f2">Editing cepat untuk kebutuhan harian</li>
+            <li data-i18n="p4.f3">Paket konten siap posting</li>
           </ul>
         </template>
       </article>
 
       <!-- ===== Project 5 ===== -->
-      <article class="card reveal" data-category="landing">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/nocturne.svg" data-caption="Nocturne — Photographer">
-          <img src="assets/projects/nocturne.svg" alt="Tampilan portfolio Nocturne" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="social">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/social-content.svg" data-caption="Social Media Content Production">
+          <img src="assets/projects/social-content.svg" alt="Grid konten media sosial dengan ikon play" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.landing">Landing Page</span><span class="card__year">2023</span></div>
-          <h3 class="card__title">Nocturne — Photographer</h3>
-          <p class="card__desc" data-i18n="p5.d">Portfolio fotografi malam dengan galeri fullscreen yang imersif.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2025</span></div>
+          <h3 class="card__title">Social Media Content Production</h3>
+          <p class="card__desc" data-i18n="p5.d">Produksi konten rutin untuk kebutuhan feed, story, dan reels.</p>
+          <ul class="tags"><li>Content</li><li>Editing</li><li>Scheduling</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p5" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p5.long">Galeri yang membiarkan foto bicara: UI hampir hilang saat tidak dipakai, transisi antar foto halus, dan gambar dimuat bertahap sesuai ukuran layar.</p>
+          <p data-i18n="p5.long">Produksi konten berkelanjutan: merancang tema, mengambil gambar, mengedit, lalu menyiapkan caption supaya akun tetap aktif dan konsisten.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p5.role">Frontend Developer</p>
+          <p data-i18n="p5.role">Content Creator &amp; Editor</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p5.f1">Galeri masonry responsif</li>
-            <li data-i18n="p5.f2">Lazy loading dengan blur-up placeholder</li>
-            <li data-i18n="p5.f3">Navigasi keyboard untuk lightbox</li>
+            <li data-i18n="p5.f1">Produksi konten secara batch</li>
+            <li data-i18n="p5.f2">Editing dan penyesuaian format per platform</li>
+            <li data-i18n="p5.f3">Caption dan penjadwalan posting</li>
           </ul>
         </template>
       </article>
 
       <!-- ===== Project 6 ===== -->
-      <article class="card reveal" data-category="experiment">
-        <button class="card__thumb" type="button" data-lightbox="assets/projects/phase.svg" data-caption="Phase — Habit Tracker">
-          <img src="assets/projects/phase.svg" alt="Tampilan aplikasi Phase" loading="lazy" width="800" height="500" />
+      <article class="card reveal" data-category="design">
+        <button class="card__thumb" type="button" data-lightbox="assets/projects/graphic-design.svg" data-caption="Graphic Design &amp; Creative Projects">
+          <img src="assets/projects/graphic-design.svg" alt="Mockup poster dan palet warna desain grafis" loading="lazy" width="800" height="500" />
           <span class="card__zoom" aria-hidden="true">⤢</span>
         </button>
         <div class="card__body">
-          <div class="card__meta"><span class="tag" data-i18n="projects.experiment">Eksperimen</span><span class="card__year">2023</span></div>
-          <h3 class="card__title">Phase — Habit Tracker</h3>
-          <p class="card__desc" data-i18n="p6.d">Habit tracker yang memetakan konsistensi ke fase bulan.</p>
-          <ul class="tags"><li>Vanilla JS</li><li>IndexedDB</li><li>PWA</li></ul>
+          <div class="card__meta"><span class="tag" data-i18n="projects.design">Desain</span><span class="card__year">2024</span></div>
+          <h3 class="card__title">Graphic Design &amp; Creative Projects</h3>
+          <p class="card__desc" data-i18n="p6.d">Desain grafis untuk kebutuhan promosi dan identitas visual.</p>
+          <ul class="tags"><li>Poster</li><li>Feed</li><li>Branding</li></ul>
           <div class="card__actions">
             <button class="link-btn" type="button" data-open-project="p6" data-i18n="projects.detail">Detail</button>
-            <a class="link-btn" href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer" data-i18n="projects.repo">Repo</a>
-            <a class="link-btn" href="https://kavara80.github.io" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live</a>
           </div>
         </div>
         <template class="project-detail">
-          <p data-i18n="p6.long">Ide iseng: kebiasaan yang konsisten membuat "bulan" kamu makin penuh. Data disimpan lokal, tanpa akun, dan tetap jalan offline.</p>
+          <p data-i18n="p6.long">Mengerjakan desain pendukung: poster, feed Instagram, dan materi promosi dengan gaya yang menyesuaikan kebutuhan brand.</p>
           <p class="detail__label" data-i18n="modal.role">Peran</p>
-          <p data-i18n="p6.role">Solo — ide, desain, dan kode</p>
+          <p data-i18n="p6.role">Graphic Designer</p>
           <p class="detail__label" data-i18n="modal.features">Yang dikerjakan</p>
           <ul class="detail__list">
-            <li data-i18n="p6.f1">Perhitungan fase bulan yang dipakai sebagai progres</li>
-            <li data-i18n="p6.f2">Penyimpanan lokal dengan IndexedDB</li>
-            <li data-i18n="p6.f3">Installable sebagai PWA</li>
+            <li data-i18n="p6.f1">Desain feed dan poster</li>
+            <li data-i18n="p6.f2">Tipografi dan komposisi visual</li>
+            <li data-i18n="p6.f3">Penyesuaian format cetak dan digital</li>
           </ul>
         </template>
       </article>
     </div>
-    <p class="empty" id="projectEmpty" hidden data-i18n="projects.empty">Tidak ada project di kategori ini.</p>
+
+    <p class="empty" id="projectEmpty" hidden data-i18n="projects.empty">Tidak ada karya di kategori ini.</p>
   </div>
 </section>
 
@@ -541,7 +534,7 @@
     <header class="section__head">
       <p class="kicker reveal" data-i18n="exp.kicker">Perjalanan</p>
       <h2 class="section__title reveal" data-i18n="exp.title">Pengalaman.</h2>
-      <p class="section__lead reveal" data-i18n="exp.subtitle">Tempat-tempat yang membentuk cara saya bekerja.</p>
+      <p class="section__lead reveal" data-i18n="exp.subtitle">Dari sekolah sampai dipercaya mengelola akun brand.</p>
     </header>
 
     <ol class="timeline">
@@ -549,36 +542,36 @@
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__card">
           <div class="timeline__head">
-            <h3 data-i18n="exp1.role">Frontend Developer</h3>
-            <span class="timeline__period" data-i18n="exp1.period">2024 — Sekarang</span>
+            <h3 data-i18n="exp1.role">Video Editor &amp; Designer</h3>
+            <span class="timeline__period" data-i18n="exp1.period">2023 — 2026</span>
           </div>
-          <p class="timeline__company" data-i18n="exp1.company">Studio Lumen</p>
-          <p class="timeline__desc" data-i18n="exp1.desc">Memimpin frontend untuk produk SaaS: membangun design system, menurunkan waktu load 40%, dan mendampingi dua developer junior.</p>
-          <ul class="tags"><li>React</li><li>TypeScript</li><li>Design System</li></ul>
+          <p class="timeline__company" data-i18n="exp1.company">Freelance</p>
+          <p class="timeline__desc" data-i18n="exp1.desc">Mengedit video dan mengerjakan desain sejak sekolah hingga sekarang — dari tugas sekolah sampai kebutuhan klien.</p>
+          <ul class="tags"><li>Video Editing</li><li>Graphic Design</li><li>Freelance</li></ul>
         </div>
       </li>
       <li class="timeline__item reveal">
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__card">
           <div class="timeline__head">
-            <h3 data-i18n="exp2.role">UI Engineer</h3>
-            <span class="timeline__period" data-i18n="exp2.period">2022 — 2024</span>
+            <h3 data-i18n="exp2.role">Videographer</h3>
+            <span class="timeline__period" data-i18n="exp2.period">2025 — 2026</span>
           </div>
-          <p class="timeline__company" data-i18n="exp2.company">Nimbus Labs</p>
-          <p class="timeline__desc" data-i18n="exp2.desc">Mengubah desain Figma menjadi antarmuka produksi untuk 6 produk klien, dengan fokus pada aksesibilitas dan performa.</p>
-          <ul class="tags"><li>Vue</li><li>Tailwind</li><li>Accessibility</li></ul>
+          <p class="timeline__company" data-i18n="exp2.company">Sintang</p>
+          <p class="timeline__desc" data-i18n="exp2.desc">Videografer junior dengan fokus produksi video, khususnya wedding. Terus belajar hal baru dari setiap acara.</p>
+          <ul class="tags"><li>Videography</li><li>Wedding</li><li>On-site</li></ul>
         </div>
       </li>
       <li class="timeline__item reveal">
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__card">
           <div class="timeline__head">
-            <h3 data-i18n="exp3.role">Freelance Web Designer</h3>
-            <span class="timeline__period" data-i18n="exp3.period">2021 — 2022</span>
+            <h3 data-i18n="exp3.role">Social Media Manager</h3>
+            <span class="timeline__period" data-i18n="exp3.period">2025 — 2026</span>
           </div>
-          <p class="timeline__company" data-i18n="exp3.company">Lepas</p>
-          <p class="timeline__desc" data-i18n="exp3.desc">Membantu UMKM dan kreator membangun kehadiran online: dari wireframe, desain, sampai website jadi.</p>
-          <ul class="tags"><li>Figma</li><li>HTML</li><li>CSS</li></ul>
+          <p class="timeline__company" data-i18n="exp3.company">WCC</p>
+          <p class="timeline__desc" data-i18n="exp3.desc">Dipercaya mengelola akun Wedding Content Creator dan mengembangkannya dari nol sampai akun tersebut berkembang.</p>
+          <ul class="tags"><li>Social Media</li><li>Content Plan</li><li>Instagram</li></ul>
         </div>
       </li>
     </ol>
@@ -590,15 +583,15 @@
   <div class="container contact">
     <div class="contact__intro">
       <p class="kicker reveal" data-i18n="contact.kicker">Kontak</p>
-      <h2 class="section__title reveal" data-i18n="contact.title">Punya ide? Mari bicara.</h2>
+      <h2 class="section__title reveal" data-i18n="contact.title">Punya momen? Mari jadi cerita.</h2>
       <p class="section__lead reveal" data-i18n="contact.subtitle">
-        Saya terbuka untuk project freelance, kerja full-time, atau sekadar ngobrol soal frontend.
+        Terbuka untuk project freelance — video wedding, konten media sosial, desain, sampai pengelolaan akun.
       </p>
 
       <div class="contact__email reveal">
         <span class="contact__label" data-i18n="contact.email">Email</span>
         <div class="email-row">
-          <!-- GANTI: email kamu (sekalian const EMAIL di js/main.js) -->          <a class="email" href="mailto:hello@kavara.dev">hello@kavara.dev</a>
+          <a class="email" href="mailto:ardinuariangga@gmail.com">ardinuariangga@gmail.com</a>
           <button class="icon-btn icon-btn--sm" type="button" data-copy-email data-i18n-aria="contact.copy" aria-label="Salin email">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
           </button>
@@ -606,23 +599,23 @@
       </div>
 
       <ul class="contact__socials reveal">
-        <li><a href="https://github.com/kavara80" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
-        <li><a href="mailto:hello@kavara.dev">Email <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://instagram.com/by_kavara01" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a></li>
+        <li><a href="mailto:ardinuariangga@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
         <li><a href="assets/cv.pdf" download>CV <span aria-hidden="true">↗</span></a></li>
       </ul>
 
       <dl class="contact__facts reveal">
         <div class="contact__fact">
           <dt data-i18n="about.location">Lokasi</dt>
-          <dd data-i18n="about.locationVal">Jakarta, Indonesia</dd>
+          <dd data-i18n="about.locationVal">Pontianak, Kalimantan Barat</dd>
         </div>
         <div class="contact__fact">
           <dt data-i18n="contact.response">Waktu respons</dt>
-          <dd data-i18n="contact.responseVal">Kurang dari 24 jam</dd>
+          <dd data-i18n="contact.responseVal">1×24 jam</dd>
         </div>
         <div class="contact__fact">
           <dt data-i18n="about.status">Status</dt>
-          <dd><span class="dot" aria-hidden="true"></span><span data-i18n="about.statusVal">Terbuka untuk peluang</span></dd>
+          <dd><span class="dot" aria-hidden="true"></span><span data-i18n="about.statusVal">Freelance / Open to Projects</span></dd>
         </div>
       </dl>
     </div>
@@ -660,12 +653,13 @@
   <div class="container footer__inner">
     <div class="footer__brand">
       <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M21 5a11 11 0 1 0 0 22 12.5 12.5 0 0 1 0-22Z" fill="currentColor"/>
+        <path fill-rule="evenodd" d="M16 2a14 14 0 1 0 0 28 14 14 0 0 0 0-28Zm0 3.4a10.6 10.6 0 1 1 0 21.2 10.6 10.6 0 0 1 0-21.2Z"/>
+        <path d="M13.2 10.4v11.2L22.6 16Z"/>
       </svg>
       <span>Kavara</span>
     </div>
     <p class="footer__text">
-      © <span id="year">2026</span> Kavara. <span data-i18n="footer.rights">Semua hak dilindungi.</span>
+      © <span id="year">2026</span> Ardinuari Angga Chavara. <span data-i18n="footer.rights">Semua hak dilindungi.</span>
     </p>
     <p class="footer__text footer__text--muted" data-i18n="footer.built">Dibangun dengan HTML, CSS, dan JavaScript murni.</p>
   </div>

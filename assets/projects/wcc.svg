@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Mockup akun Instagram WCC">
+  <defs>
+    <linearGradient id="wccBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1120"/><stop offset="1" stop-color="#101C36"/>
+    </linearGradient>
+    <linearGradient id="wccRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B6CF6"/><stop offset="1" stop-color="#7CE8FF"/>
+    </linearGradient>
+    <linearGradient id="wccTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2B4D"/><stop offset="1" stop-color="#0E1830"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#wccBg)"/>
+  <g opacity=".07" stroke="#7CE8FF" stroke-width="1">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
+  </g>
+
+  <!-- phone card -->
+  <rect x="255" y="42" width="290" height="416" rx="26" fill="#0D1526" stroke="#22355C"/>
+  <!-- top bar -->
+  <rect x="255" y="42" width="290" height="52" rx="26" fill="#101C36"/>
+  <rect x="255" y="68" width="290" height="26" fill="#101C36"/>
+  <text x="277" y="75" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#EAEEF7">wcc.story</text>
+  <circle cx="513" cy="69" r="3.5" fill="#7CE8FF"/><circle cx="524" cy="69" r="3.5" fill="#7CE8FF"/><circle cx="535" cy="69" r="3.5" fill="#7CE8FF"/>
+
+  <!-- profile row -->
+  <circle cx="300" cy="136" r="27" fill="none" stroke="url(#wccRing)" stroke-width="2.5"/>
+  <circle cx="300" cy="136" r="21" fill="#16233D"/>
+  <path d="M300 128a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 15c-7 0-12 4-13 10h26c-1-6-6-10-13-10Z" fill="#7CE8FF" opacity=".75"/>
+
+  <text x="340" y="128" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#EAEEF7">WCC · Wedding</text>
+  <text x="340" y="147" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8FA0BE">Content Creator</text>
+  <text x="340" y="163" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#6B7893">Pontianak</text>
+
+  <!-- stats -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="190" font-size="12" font-weight="700" fill="#EAEEF7">0</text>
+    <text x="300" y="203" font-size="8" fill="#6B7893">awal</text>
+    <text x="400" y="190" font-size="12" font-weight="700" fill="#7CE8FF">+</text>
+    <text x="400" y="203" font-size="8" fill="#6B7893">konten</text>
+    <text x="500" y="190" font-size="12" font-weight="700" fill="#EAEEF7">1</text>
+    <text x="500" y="203" font-size="8" fill="#6B7893">akun</text>
+  </g>
+
+  <!-- grid -->
+  <g>
+    <rect x="277" y="222" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+    <rect x="361" y="222" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+    <rect x="445" y="222" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+    <rect x="277" y="306" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+    <rect x="361" y="306" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+    <rect x="445" y="306" width="80" height="80" rx="6" fill="url(#wccTile)"/>
+  </g>
+  <g fill="none" stroke="#3B6CF6" stroke-width="1.6" opacity=".9">
+    <path d="M301 258l14-14M315 244v10M315 244h-10"/>
+    <circle cx="401" cy="262" r="13"/>
+    <path d="M469 250h30M469 262h30M469 274h18"/>
+    <path d="M289 336l12 12M301 336l-12 12"/>
+    <circle cx="401" cy="346" r="9" fill="#3B6CF6" stroke="none" opacity=".6"/>
+    <path d="M459 340h26M459 352h16"/>
+  </g>
+
+  <!-- growth arrow -->
+  <g opacity=".9">
+    <path d="M596 330l38-40 30 24 44-62" fill="none" stroke="#7CE8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="708" cy="252" r="5" fill="#7CE8FF"/>
+  </g>
+  <text x="596" y="368" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8FA0BE">0 → berkembang</text>
+</svg>

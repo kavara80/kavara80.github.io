@@ -1,16 +1,16 @@
 {
-  "name": "Kavara — Frontend Developer",
+  "name": "Kavara — Video Editor & Videographer",
   "short_name": "Kavara",
-  "description": "Portfolio Kavara, frontend developer di Jakarta — antarmuka web yang cepat, aksesibel, dan nyaman dipakai.",
+  "description": "Portfolio Ardinuari Angga Chavara (Kavara) — video editor dan videographer di Pontianak. Video wedding, content creation, desain grafis, dan social media management.",
   "lang": "id",
   "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#070A14",
-  "theme_color": "#070A14",
-  "categories": ["portfolio", "developer", "design"],
+  "background_color": "#060A14",
+  "theme_color": "#060A14",
+  "categories": ["portfolio", "video", "design", "social"],
   "icons": [
     {
       "src": "assets/icon-192.png",

@@ -1,12 +1,15 @@
 # Kavara — Portfolio
 
-Portfolio pribadi satu halaman. HTML, CSS, dan JavaScript murni — tanpa framework, tanpa build step.
+Portfolio pribadi satu halaman untuk **Ardinuari Angga Chavara** — video editor & videographer.
+HTML, CSS, dan JavaScript murni — tanpa framework, tanpa build step.
+
+Live: **https://kavara80.github.io**
 
 ## Menjalankan lokal
 
 ```bash
-cd C:\Users\ASUS\kavara80.github.io
-python -m http.server 8123
+cd ~/Documents/kavara80.github.io
+python3 -m http.server 8123
 # buka http://127.0.0.1:8123/
 ```
 
@@ -21,13 +24,14 @@ yang memang hanya didaftarkan di HTTPS).
 ├── js/
 │   ├── main.js             # nav, tema, bahasa, palette, filter, modal, form
 │   ├── moon.js             # perhitungan fase bulan
-│   └── i18n.js             # kamus ID/EN
+│   └── i18n.js             # kamus ID/EN + frasa typing
 ├── assets/
-│   ├── cv.pdf              # CV (placeholder — ganti)
+│   ├── avatar.jpg          # foto profil (dari CV)
+│   ├── cv.pdf              # CV asli
 │   ├── favicon.svg
 │   ├── icon-192.png        # ikon PWA / iOS
 │   ├── icon-512.png
-│   ├── og-image.png        # 1200×630
+│   ├── og-image.jpg        # 1200×630 (share preview)
 │   └── projects/           # thumbnail 800×500
 ├── manifest.webmanifest
 ├── sw.js                   # service worker (offline shell)
@@ -35,16 +39,27 @@ yang memang hanya didaftarkan di HTTPS).
 └── sitemap.xml
 ```
 
-## Yang perlu diganti
+## Data yang dipakai
+
+| Field | Nilai |
+|---|---|
+| Nama | Ardinuari Angga Chavara |
+| Nama tampil | Kavara |
+| Role | Video Editor · Videographer · Content Creator · Social Media Manager |
+| Lokasi | Pontianak, Kalimantan Barat |
+| Email | ardinuariangga@gmail.com |
+| Instagram | [@by_kavara01](https://instagram.com/by_kavara01) |
+| Status | Freelance / Open to Projects |
+
+## Yang perlu diganti saat update
 
 | Cari | Ganti dengan |
 |---|---|
-| `Kavara` | Nama kamu (title, hero, footer, JSON-LD, manifest) |
-| `hello@kavara.dev` | Email kamu (`index.html` **dan** `const EMAIL` di `js/main.js`) |
-| `https://github.com/kavara80` | URL GitHub kamu |
-| `https://kavara80.github.io` | Domain kamu (canonical, OG, JSON-LD, sitemap) |
-| `assets/cv.pdf` | CV asli kamu (nama file tetap) |
+| `ardinuariangga@gmail.com` | Email baru (`index.html` **dan** `const EMAIL` di `js/main.js`) |
+| `assets/avatar.jpg` | Foto profil baru (rasio 1:1) |
+| `assets/cv.pdf` | CV terbaru (nama file tetap) |
 | `assets/projects/*.svg` | Screenshot project (rasio 8:5, misal 800×500) |
+| `assets/og-image.jpg` | Gambar share 1200×630 |
 | `WEB3FORMS_KEY` | Access key dari web3forms.com (opsional) |
 
 ### Form kontak
@@ -56,8 +71,20 @@ yang memang hanya didaftarkan di HTTPS).
 ### Menambah project
 
 Duplikat satu `<article class="card">` di `index.html`, sesuaikan `data-category`
-(`app` / `landing` / `experiment`), gambar, judul, deskripsi, link, dan isi
+(`video` / `social` / `design`), gambar, judul, deskripsi, dan isi
 `<template class="project-detail">`. Tambahkan key `p7.*` di `js/i18n.js` (dua bahasa).
+
+### Tema
+
+Warna diatur lewat token di `css/style.css`:
+
+```css
+--brand: #3B6CF6;        /* royal blue */
+--brand-light: #7CE8FF;  /* cyan */
+--brand-deep: #24479E;
+```
+
+Ganti tiga nilai itu (versi dark dan light) untuk mengubah seluruh aksen situs.
 
 ## Deploy ke GitHub Pages
 
@@ -65,7 +92,7 @@ Repo: `kavara80/kavara80.github.io` — Settings → Pages → Deploy from a bra
 
 ```bash
 git add -A
-git commit -m "Rebuild portfolio"
+git commit -m "Update konten"
 git push
 ```
 

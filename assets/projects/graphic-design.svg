@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Mockup poster dan palet warna desain grafis">
+  <defs>
+    <linearGradient id="gdBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090F1C"/><stop offset="1" stop-color="#111E36"/>
+    </linearGradient>
+    <linearGradient id="gdPoster" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B6CF6"/><stop offset="1" stop-color="#0B1B3A"/>
+    </linearGradient>
+    <linearGradient id="gdPoster2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7CE8FF"/><stop offset="1" stop-color="#1B4F8A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#gdBg)"/>
+  <g opacity=".06" stroke="#7CE8FF">
+    <path d="M0 250h800M400 0v500"/>
+  </g>
+
+  <!-- back poster -->
+  <rect x="404" y="86" width="250" height="330" rx="8" fill="url(#gdPoster2)" opacity=".35" transform="rotate(6 529 251)"/>
+
+  <!-- main poster -->
+  <g>
+    <rect x="120" y="60" width="270" height="360" rx="10" fill="url(#gdPoster)" stroke="#4C7BFF"/>
+    <circle cx="255" cy="180" r="62" fill="#7CE8FF" opacity=".22"/>
+    <circle cx="255" cy="180" r="62" fill="none" stroke="#7CE8FF" stroke-width="1.5" opacity=".5"/>
+    <text x="150" y="132" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#BFD6FF">POSTER</text>
+    <text x="150" y="290" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#EAEEF7">Aa</text>
+    <rect x="150" y="312" width="150" height="6" rx="3" fill="#EAEEF7" opacity=".55"/>
+    <rect x="150" y="328" width="104" height="6" rx="3" fill="#EAEEF7" opacity=".28"/>
+    <rect x="150" y="344" width="126" height="6" rx="3" fill="#EAEEF7" opacity=".18"/>
+    <text x="150" y="392" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#BFD6FF" opacity=".8">2024 · CREATIVE</text>
+  </g>
+
+  <!-- swatches -->
+  <g>
+    <rect x="470" y="300" width="46" height="46" rx="8" fill="#3B6CF6"/>
+    <rect x="524" y="300" width="46" height="46" rx="8" fill="#7CE8FF"/>
+    <rect x="578" y="300" width="46" height="46" rx="8" fill="#24479E"/>
+    <rect x="632" y="300" width="46" height="46" rx="8" fill="#EAEEF7"/>
+    <text x="470" y="372" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8FA0BE">Palet warna</text>
+    <text x="470" y="392" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6B7893">Royal blue · Cyan</text>
+  </g>
+
+  <!-- type specimen -->
+  <g>
+    <text x="470" y="200" font-family="Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#EAEEF7" opacity=".9">Aa</text>
+    <text x="470" y="228" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8FA0BE">Tipografi &amp; komposisi</text>
+  </g>
+
+  <!-- pen tool hint -->
+  <g opacity=".8">
+    <path d="M96 448h608" stroke="#2A3D63" stroke-width="1"/>
+    <circle cx="120" cy="448" r="4" fill="#7CE8FF"/>
+    <circle cx="680" cy="448" r="4" fill="#3B6CF6"/>
+  </g>
+</svg>

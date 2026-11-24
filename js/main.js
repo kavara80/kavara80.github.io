@@ -10,7 +10,7 @@
     return Array.prototype.slice.call((scope || document).querySelectorAll(sel));
   };
 
-  var EMAIL = "hello@kavara.dev";
+  var EMAIL = "ardinuariangga@gmail.com";
   var WEB3FORMS_KEY = ""; // isi access key web3forms.com untuk kirim tanpa keluar halaman
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
