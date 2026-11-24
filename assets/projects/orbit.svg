@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08131A"/><stop offset="1" stop-color="#05090D"/>
+    </linearGradient>
+    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E4A44"/><stop offset=".55" stop-color="#123029"/><stop offset="1" stop-color="#0A1A17"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7FD9B4"/><stop offset="1" stop-color="#D8F3E5"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset=".55" stop-color="#7FD9B4" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#7FD9B4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <!-- nav -->
+  <circle cx="46" cy="40" r="9" fill="url(#mint)"/>
+  <rect x="62" y="36" width="56" height="8" rx="4" fill="#3E514C"/>
+  <g fill="#35463F">
+    <rect x="512" y="36" width="44" height="7" rx="3.5"/>
+    <rect x="576" y="36" width="38" height="7" rx="3.5"/>
+    <rect x="634" y="36" width="50" height="7" rx="3.5"/>
+  </g>
+  <rect x="704" y="26" width="64" height="28" rx="14" fill="none" stroke="#3E514C"/>
+  <rect x="720" y="38" width="32" height="5" rx="2.5" fill="#7FD9B4"/>
+
+  <!-- headline -->
+  <rect x="46" y="120" width="86" height="22" rx="11" fill="#0E211C"/>
+  <circle cx="60" cy="131" r="4" fill="#7FD9B4"/>
+  <rect x="70" y="128" width="50" height="6" rx="3" fill="#4E7A6B"/>
+  <rect x="46" y="166" width="330" height="30" rx="6" fill="#DCE9E3"/>
+  <rect x="46" y="208" width="286" height="30" rx="6" fill="#DCE9E3"/>
+  <rect x="46" y="250" width="196" height="30" rx="6" fill="url(#mint)"/>
+  <rect x="46" y="304" width="268" height="7" rx="3.5" fill="#33463F"/>
+  <rect x="46" y="322" width="212" height="7" rx="3.5" fill="#2A3B35"/>
+  <rect x="46" y="360" width="126" height="40" rx="20" fill="url(#mint)"/>
+  <rect x="70" y="377" width="54" height="6" rx="3" fill="#07231B"/>
+  <rect x="188" y="360" width="112" height="40" rx="20" fill="none" stroke="#3E514C"/>
+  <rect x="210" y="377" width="42" height="6" rx="3" fill="#6C8C7F"/>
+
+  <!-- planet -->
+  <circle cx="596" cy="228" r="150" fill="url(#halo)"/>
+  <circle cx="596" cy="228" r="104" fill="url(#planet)" stroke="#2C5B50" stroke-opacity=".5"/>
+  <ellipse cx="596" cy="228" rx="152" ry="52" fill="none" stroke="#2F6557" stroke-opacity=".55" transform="rotate(-18 596 228)"/>
+  <ellipse cx="596" cy="228" rx="168" ry="60" fill="none" stroke="#2F6557" stroke-opacity=".22" transform="rotate(-18 596 228)"/>
+  <circle cx="730" cy="150" r="7" fill="url(#mint)"/>
+  <circle cx="474" cy="316" r="4" fill="#7FD9B4" opacity=".7"/>
+  <path d="M540 190c30-14 62-10 84 6" fill="none" stroke="#3E7D6C" stroke-width="2" opacity=".6"/>
+
+  <!-- feature row -->
+  <g>
+    <rect x="46" y="424" width="216" height="48" rx="12" fill="#0A1713" stroke="#1E332C"/>
+    <circle cx="72" cy="448" r="9" fill="#123029"/>
+    <rect x="90" y="440" width="76" height="6" rx="3" fill="#6C8C7F"/>
+    <rect x="90" y="452" width="48" height="5" rx="2.5" fill="#33463F"/>
+
+    <rect x="278" y="424" width="216" height="48" rx="12" fill="#0A1713" stroke="#1E332C"/>
+    <circle cx="304" cy="448" r="9" fill="#123029"/>
+    <rect x="322" y="440" width="64" height="6" rx="3" fill="#6C8C7F"/>
+    <rect x="322" y="452" width="56" height="5" rx="2.5" fill="#33463F"/>
+
+    <rect x="510" y="424" width="216" height="48" rx="12" fill="#0A1713" stroke="#1E332C"/>
+    <circle cx="536" cy="448" r="9" fill="#123029"/>
+    <rect x="554" y="440" width="70" height="6" rx="3" fill="#6C8C7F"/>
+    <rect x="554" y="452" width="40" height="5" rx="2.5" fill="#33463F"/>
+  </g>
+</svg>

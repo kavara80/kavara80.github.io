@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kavara80.github.io/sitemap.xml

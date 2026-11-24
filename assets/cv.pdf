@@ -1,0 +1,71 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 3155 >>
+stream
+0.60 0.42 0.13 rg 0 838 595.0 4 re f
+BT /F1 30 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 772 Tm (KAVARA) Tj ET
+BT /F2 11 Tf 0.60 0.42 0.13 rg 1 0 0 1 57 750 Tm (Frontend Developer) Tj ET
+BT /F2 8.5 Tf 0.42 0.40 0.35 rg 1 0 0 1 57 733 Tm (hello@kavara.dev   ∑   kavara80.github.io   ∑   Jakarta, Indonesia) Tj ET
+0.85 0.82 0.76 RG 0.6 w 56 718 m 539 718 l S
+BT /F1 7.5 Tf 0.60 0.42 0.13 rg 1 0 0 1 56 697 Tm (PROFILE) Tj ET
+BT /F2 9.2 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 681 Tm (Frontend developer with three years building interfaces that stay fast, accessible, and) Tj ET
+BT /F2 9.2 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 668 Tm (comfortable to use. Focused on design systems, motion, and the small details that make) Tj ET
+BT /F2 9.2 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 655 Tm (a product feel alive.) Tj ET
+BT /F1 7.5 Tf 0.60 0.42 0.13 rg 1 0 0 1 56 630 Tm (EXPERIENCE) Tj ET
+BT /F1 10 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 610 Tm (Frontend Developer) Tj ET
+BT /F2 8.5 Tf 0.42 0.40 0.35 rg 1 0 0 1 455 610 Tm (2024 ó Present) Tj ET
+BT /F2 9 Tf 0.42 0.40 0.35 rg 1 0 0 1 56 596 Tm (Studio Lumen) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 581 Tm (Led frontend for a SaaS product: built the design system, cut load time by 40%, and) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 569 Tm (mentored two junior developers.) Tj ET
+BT /F1 10 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 540 Tm (UI Engineer) Tj ET
+BT /F2 8.5 Tf 0.42 0.40 0.35 rg 1 0 0 1 455 540 Tm (2022 ó 2024) Tj ET
+BT /F2 9 Tf 0.42 0.40 0.35 rg 1 0 0 1 56 526 Tm (Nimbus Labs) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 511 Tm (Turned Figma designs into production interfaces for six client products, focused on) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 499 Tm (accessibility and performance.) Tj ET
+BT /F1 10 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 470 Tm (Freelance Web Designer) Tj ET
+BT /F2 8.5 Tf 0.42 0.40 0.35 rg 1 0 0 1 455 470 Tm (2021 ó 2022) Tj ET
+BT /F2 9 Tf 0.42 0.40 0.35 rg 1 0 0 1 56 456 Tm (Independent) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 441 Tm (Helped small businesses and creators build an online presence: wireframes, design,) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 429 Tm (and the finished site.) Tj ET
+BT /F1 7.5 Tf 0.60 0.42 0.13 rg 1 0 0 1 56 396 Tm (SKILLS) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 380 Tm (HTML ∑ CSS ∑ JavaScript \(ES2023\) ∑ TypeScript ∑ React ∑ Next.js ∑ Tailwind ∑ Node.js) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 367 Tm (Accessibility \(WCAG\) ∑ Design systems ∑ Figma ∑ Performance ∑ Testing) Tj ET
+BT /F1 7.5 Tf 0.60 0.42 0.13 rg 1 0 0 1 56 334 Tm (SELECTED WORK) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 318 Tm (Lunaria ó analytics dashboard with a 40+ component design system.) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 305 Tm (Orbit ó climate startup landing page, Lighthouse 98 on mobile.) Tj ET
+BT /F2 8.8 Tf 0.10 0.09 0.06 rg 1 0 0 1 56 292 Tm (Tidepool ó open-source design system, Web Components and CSS tokens.) Tj ET
+0.85 0.82 0.76 RG 0.6 w 56 96 m 539 96 l S
+BT /F2 7.8 Tf 0.42 0.40 0.35 rg 1 0 0 1 56 78 Tm (kavara80.github.io) Tj ET
+BT /F2 7.8 Tf 0.42 0.40 0.35 rg 1 0 0 1 470 78 Tm (Page 1 / 1) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000000359 00000 n 
+0000000456 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3663
+%%EOF

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1224"/><stop offset="1" stop-color="#06090F"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8933F"/><stop offset="1" stop-color="#F6E6BD"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8C77B" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#E8C77B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- sidebar -->
+  <rect width="150" height="500" fill="#080D19"/>
+  <line x1="150" y1="0" x2="150" y2="500" stroke="#1A2440"/>
+  <circle cx="32" cy="38" r="8" fill="url(#gold)"/>
+  <rect x="48" y="34" width="46" height="8" rx="4" fill="#3A4664"/>
+  <rect x="20" y="86" width="110" height="30" rx="8" fill="#151E36"/>
+  <circle cx="36" cy="101" r="4" fill="#E8C77B"/>
+  <rect x="48" y="97" width="52" height="7" rx="3.5" fill="#C7CEE0"/>
+  <g fill="#3C4763">
+    <rect x="48" y="139" width="58" height="7" rx="3.5"/><circle cx="36" cy="143" r="4"/>
+    <rect x="48" y="181" width="44" height="7" rx="3.5"/><circle cx="36" cy="185" r="4"/>
+    <rect x="48" y="223" width="62" height="7" rx="3.5"/><circle cx="36" cy="227" r="4"/>
+    <rect x="48" y="265" width="38" height="7" rx="3.5"/><circle cx="36" cy="269" r="4"/>
+  </g>
+  <rect x="20" y="440" width="110" height="34" rx="9" fill="#101828"/>
+  <circle cx="38" cy="457" r="9" fill="#1D2947"/>
+  <rect x="54" y="450" width="46" height="6" rx="3" fill="#556080"/>
+  <rect x="54" y="461" width="30" height="5" rx="2.5" fill="#39445F"/>
+
+  <!-- top bar -->
+  <rect x="176" y="34" width="118" height="11" rx="5.5" fill="#D6DCEA"/>
+  <rect x="176" y="52" width="76" height="7" rx="3.5" fill="#4A5674"/>
+  <rect x="546" y="30" width="196" height="30" rx="15" fill="#0E1729" stroke="#1C2743"/>
+  <circle cx="564" cy="45" r="5" fill="none" stroke="#5A6584" stroke-width="1.6"/>
+  <rect x="576" y="42" width="86" height="6" rx="3" fill="#39445F"/>
+  <circle cx="766" cy="45" r="15" fill="#16203A"/>
+  <circle cx="766" cy="40" r="5" fill="#E8C77B" opacity=".85"/>
+  <path d="M756 55c1-6 5-9 10-9s9 3 10 9" fill="#E8C77B" opacity=".55"/>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="176" y="84" width="186" height="86" rx="12" fill="#0D1526" stroke="#1B2540"/>
+    <rect x="192" y="100" width="52" height="6" rx="3" fill="#4A5674"/>
+    <text x="192" y="140" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#EDE8DC">12.4k</text>
+    <polyline points="286,144 300,136 312,140 324,126 338,130 348,118" fill="none" stroke="#E8C77B" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="376" y="84" width="186" height="86" rx="12" fill="#0D1526" stroke="#1B2540"/>
+    <rect x="392" y="100" width="64" height="6" rx="3" fill="#4A5674"/>
+    <text x="392" y="140" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#EDE8DC">98.2%</text>
+    <polyline points="486,144 500,132 512,138 524,124 538,130 548,120" fill="none" stroke="#8FD6A8" stroke-width="2" stroke-linecap="round"/>
+
+    <rect x="576" y="84" width="186" height="86" rx="12" fill="#0D1526" stroke="#1B2540"/>
+    <rect x="592" y="100" width="44" height="6" rx="3" fill="#4A5674"/>
+    <text x="592" y="140" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#EDE8DC">3.1s</text>
+    <polyline points="686,144 700,138 712,140 724,130 738,134 748,122" fill="none" stroke="#9AA9C9" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- chart panel -->
+  <rect x="176" y="188" width="404" height="288" rx="14" fill="#0D1526" stroke="#1B2540"/>
+  <rect x="196" y="208" width="96" height="8" rx="4" fill="#C7CEE0"/>
+  <rect x="196" y="224" width="60" height="6" rx="3" fill="#414C69"/>
+  <g stroke="#161F35">
+    <line x1="196" y1="280" x2="560" y2="280"/>
+    <line x1="196" y1="330" x2="560" y2="330"/>
+    <line x1="196" y1="380" x2="560" y2="380"/>
+    <line x1="196" y1="430" x2="560" y2="430"/>
+  </g>
+  <path d="M196 402 L240 374 L284 390 L328 342 L372 358 L416 302 L460 320 L504 270 L548 288 L560 244 L560 430 L196 430 Z" fill="url(#area)"/>
+  <path d="M196 402 L240 374 L284 390 L328 342 L372 358 L416 302 L460 320 L504 270 L548 288 L560 244" fill="none" stroke="#E8C77B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="504" cy="270" r="5" fill="#0D1526" stroke="#F6E6BD" stroke-width="2.5"/>
+  <g fill="#39445F">
+    <rect x="196" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="252" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="308" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="364" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="420" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="476" y="446" width="26" height="5" rx="2.5"/>
+    <rect x="532" y="446" width="26" height="5" rx="2.5"/>
+  </g>
+
+  <!-- donut panel -->
+  <rect x="594" y="188" width="168" height="288" rx="14" fill="#0D1526" stroke="#1B2540"/>
+  <rect x="612" y="208" width="58" height="7" rx="3.5" fill="#C7CEE0"/>
+  <g transform="translate(678 300)">
+    <circle r="50" fill="none" stroke="#1A2440" stroke-width="14"/>
+    <circle r="50" fill="none" stroke="#E8C77B" stroke-width="14" stroke-linecap="round"
+            stroke-dasharray="214 314" transform="rotate(-90)"/>
+  </g>
+  <text x="678" y="306" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#EDE8DC">68%</text>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" font-size="9" fill="#6C7590">
+    <circle cx="618" cy="392" r="3" fill="#E8C77B"/><text x="628" y="395">Organic</text>
+    <circle cx="618" cy="412" r="3" fill="#39445F"/><text x="628" y="415">Referral</text>
+    <circle cx="618" cy="432" r="3" fill="#26314D"/><text x="628" y="435">Direct</text>
+  </g>
+</svg>
