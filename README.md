@@ -48,7 +48,7 @@ yang memang hanya didaftarkan di HTTPS).
 | Role | Video Editor · Videographer · Content Creator · Social Media Manager |
 | Lokasi | Pontianak, Kalimantan Barat |
 | Email | ardinuariangga@gmail.com |
-| Instagram | [@by_kavara01](https://instagram.com/by_kavara01) |
+| Instagram | [@bykavara_01](https://instagram.com/bykavara_01) |
 | Status | Freelance / Open to Projects |
 
 ## Yang perlu diganti saat update
