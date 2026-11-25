@@ -146,6 +146,7 @@
       <h1 class="hero__title">
         <span class="hero__greeting" data-i18n="hero.greeting">Halo, saya</span>
         <span class="hero__name">Kavara</span>
+        <span class="hero__fullname">Ardinuari Angga Chavara</span>
       </h1>
 
       <p class="hero__role">
@@ -184,37 +185,27 @@
       </ul>
     </div>
 
-    <!-- Moon widget -->
-    <div class="hero__moon">
-      <div class="moon-card">
-        <div class="moon-card__sky">
-          <svg class="moon" id="moonSvg" viewBox="0 0 200 200" role="img" aria-label="Fase bulan hari ini">
-            <defs>
-              <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="55%" stop-color="#3B6CF6" stop-opacity=".40"/>
-                <stop offset="100%" stop-color="#3B6CF6" stop-opacity="0"/>
-              </radialGradient>
-              <mask id="moonMask">
-                <circle cx="100" cy="100" r="52" fill="#fff"/>
-                <circle id="moonShadow" cx="130" cy="90" r="52" fill="#000"/>
-              </mask>
-            </defs>
-            <circle cx="100" cy="100" r="95" fill="url(#moonGlow)"/>
-            <circle cx="100" cy="100" r="52" fill="#CFE4FF" mask="url(#moonMask)"/>
-            <circle cx="100" cy="100" r="52" fill="none" stroke="#7CE8FF" stroke-opacity=".35"/>
-          </svg>
-          <span class="moon-card__star moon-card__star--1" aria-hidden="true"></span>
-          <span class="moon-card__star moon-card__star--2" aria-hidden="true"></span>
-          <span class="moon-card__star moon-card__star--3" aria-hidden="true"></span>
-        </div>
-        <div class="moon-card__meta">
-          <span class="moon-card__label" data-i18n="hero.moon">Blue moon malam ini</span>
-          <strong class="moon-card__phase" id="moonPhase">—</strong>
-          <span class="moon-card__date" id="moonDate">—</span>
-          <div class="moon-card__bar"><span id="moonIllum"></span></div>
-          <span class="moon-card__pct" id="moonPct">—</span>
-        </div>
-      </div>
+    <!-- Showreel card -->
+    <div class="hero__reel">
+      <a class="reel-card" href="https://instagram.com/by_kavara01" target="_blank" rel="noopener noreferrer">
+        <span class="reel-card__media">
+          <img src="assets/reel-poster.jpg" alt="Poster showreel — Ardinuari Angga Chavara" width="720" height="900" />
+          <span class="reel-card__play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5Z"/></svg>
+          </span>
+          <span class="reel-card__badge">
+            <span class="reel-card__dot" aria-hidden="true"></span>
+            <span data-i18n="hero.reelTitle">Showreel 2026</span>
+          </span>
+        </span>
+        <span class="reel-card__foot">
+          <span class="reel-card__label" data-i18n="hero.reel">Lihat showreel</span>
+          <span class="reel-card__cta">
+            <span data-i18n="hero.reelCta">Tonton</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </span>
+      </a>
     </div>
   </div>
 
@@ -363,7 +354,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">WCC — Social Media Account Development</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p1">WCC — Social Media Account Development</button></h3>
           <p class="card__desc" data-i18n="p1.d">Membangun akun Wedding Content Creator dari nol sampai punya identitas dan audiens.</p>
           <ul class="tags"><li>Instagram</li><li>Content Plan</li><li>Branding</li></ul>
           <div class="card__actions">
@@ -391,7 +382,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.video">Video</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">Wedding Video Editing</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p2">Wedding Video Editing</button></h3>
           <p class="card__desc" data-i18n="p2.d">Editing video wedding: alur cerita, color grading, dan sinkronisasi musik.</p>
           <ul class="tags"><li>Editing</li><li>Color Grading</li><li>Storytelling</li></ul>
           <div class="card__actions">
@@ -419,7 +410,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.video">Video</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">Wedding Videography</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p3">Wedding Videography</button></h3>
           <p class="card__desc" data-i18n="p3.d">Pengambilan gambar wedding langsung di lapangan sebagai videografer.</p>
           <ul class="tags"><li>Videography</li><li>On-site</li><li>Wedding</li></ul>
           <div class="card__actions">
@@ -447,7 +438,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2026</span></div>
-          <h3 class="card__title">Wedding Content Creation</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p4">Wedding Content Creation</button></h3>
           <p class="card__desc" data-i18n="p4.d">Konten wedding siap posting: behind the scene, reels, dan highlight.</p>
           <ul class="tags"><li>Reels</li><li>TikTok</li><li>Wedding</li></ul>
           <div class="card__actions">
@@ -475,7 +466,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.social">Sosial Media</span><span class="card__year">2025</span></div>
-          <h3 class="card__title">Social Media Content Production</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p5">Social Media Content Production</button></h3>
           <p class="card__desc" data-i18n="p5.d">Produksi konten rutin untuk kebutuhan feed, story, dan reels.</p>
           <ul class="tags"><li>Content</li><li>Editing</li><li>Scheduling</li></ul>
           <div class="card__actions">
@@ -503,7 +494,7 @@
         </button>
         <div class="card__body">
           <div class="card__meta"><span class="tag" data-i18n="projects.design">Desain</span><span class="card__year">2024</span></div>
-          <h3 class="card__title">Graphic Design &amp; Creative Projects</h3>
+          <h3 class="card__title"><button class="card__title-btn" type="button" data-open-project="p6">Graphic Design &amp; Creative Projects</button></h3>
           <p class="card__desc" data-i18n="p6.d">Desain grafis untuk kebutuhan promosi dan identitas visual.</p>
           <ul class="tags"><li>Poster</li><li>Feed</li><li>Branding</li></ul>
           <div class="card__actions">
@@ -709,7 +700,6 @@
 
 <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
 
-<script src="js/moon.js" defer></script>
 <script src="js/i18n.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>

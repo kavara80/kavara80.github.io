@@ -364,7 +364,7 @@ html[data-theme="light"] .icon-sun { display: block; }
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 88svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -465,6 +465,16 @@ html[data-theme="light"] .stars { opacity: .18; }
 html[data-theme="light"] .hero__name {
   background-image: linear-gradient(100deg, #0E7490, #2A50C4 45%, #16306B 96%);
 }
+.hero__fullname {
+  display: block;
+  margin-top: .26em;
+  font-family: var(--font-body);
+  font-size: clamp(.74rem, 1.15vw, .86rem);
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
 
 .hero__role {
   display: flex;
@@ -512,91 +522,125 @@ html[data-theme="light"] .hero__name {
 .social:hover { color: var(--brand); border-color: var(--brand); transform: translateY(-3px); }
 .social svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
-/* moon card */
-.hero__moon { display: flex; justify-content: flex-end; }
-.moon-card {
-  width: min(100%, 340px);
+/* showreel card */
+.hero__reel { display: flex; justify-content: flex-end; }
+.reel-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 330px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   overflow: hidden;
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform .45s var(--ease), border-color .3s, box-shadow .45s;
 }
-.moon-card__sky {
+.reel-card:hover,
+.reel-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--brand) 55%, transparent);
+  box-shadow: 0 34px 74px -34px rgba(0, 0, 0, .9);
+}
+.reel-card__media {
   position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+.reel-card__media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .8s var(--ease);
+}
+.reel-card:hover .reel-card__media img { transform: scale(1.045); }
+
+.reel-card__play {
+  position: absolute;
+  left: 50%; top: 58%;
+  transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
-  padding: 26px;
-  background:
-    radial-gradient(circle at 50% 38%, rgba(59,108,246,.09), transparent 58%),
-    linear-gradient(180deg, #0C1428, #070A14);
-  border-bottom: 1px solid var(--line-soft);
-  overflow: hidden;
-}
-html[data-theme="light"] .moon-card__sky {
-  background:
-    radial-gradient(circle at 50% 38%, rgba(36,71,158,.10), transparent 58%),
-    linear-gradient(180deg, #E8EFFC, #D7E3F8);
-}
-.moon { width: min(78%, 220px); height: auto; }
-.moon-card__star {
-  position: absolute;
-  width: 3px; height: 3px;
+  width: 62px; height: 62px;
   border-radius: 50%;
-  background: #fff;
-  opacity: .7;
-  animation: twinkle 4s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: rgba(6, 10, 20, .42);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transition: background-color .3s, border-color .3s, transform .35s var(--ease);
 }
-.moon-card__star--1 { top: 18%; left: 16%; animation-delay: .4s; }
-.moon-card__star--2 { top: 66%; left: 24%; width: 2px; height: 2px; animation-delay: 1.6s; }
-.moon-card__star--3 { top: 26%; right: 18%; animation-delay: 2.6s; }
+.reel-card__play svg { width: 21px; height: 21px; margin-left: 3px; fill: #fff; }
+.reel-card:hover .reel-card__play,
+.reel-card:focus-visible .reel-card__play {
+  background: var(--brand);
+  border-color: var(--brand);
+  transform: translate(-50%, -50%) scale(1.07);
+}
 
-.moon-card__meta {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2px 12px;
-  padding: 16px 20px 18px;
+.reel-card__badge {
+  position: absolute;
+  top: 14px; left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  background: rgba(6, 10, 20, .48);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #EAF2FF;
 }
-.moon-card__label {
-  grid-column: 1 / -1;
-  font-size: .66rem;
-  letter-spacing: .16em;
+.reel-card__dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #FF5D5D;
+  box-shadow: 0 0 0 0 rgba(255, 93, 93, .6);
+  animation: pulse 2.4s infinite;
+}
+
+.reel-card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 15px;
+  border-top: 1px solid var(--line-soft);
+}
+.reel-card__label {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--ink-dim);
 }
-.moon-card__phase {
-  font-family: var(--font-display);
-  font-size: 1.12rem;
+.reel-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .8rem;
   font-weight: 600;
-  letter-spacing: -.01em;
+  color: var(--brand-light);
 }
-.moon-card__date { font-family: var(--font-mono); font-size: .72rem; color: var(--ink-dim); align-self: center; }
-.moon-card__bar {
-  grid-column: 1 / -1;
-  height: 4px;
-  margin-top: 10px;
-  border-radius: 99px;
-  background: var(--surface-2);
-  overflow: hidden;
+html[data-theme="light"] .reel-card__cta { color: var(--brand); }
+.reel-card__cta svg {
+  width: 14px; height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .3s var(--ease);
 }
-.moon-card__bar span {
-  display: block;
-  height: 100%;
-  width: 0;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--brand-deep), var(--brand), var(--brand-light));
-  transition: width .9s var(--ease);
-}
-.moon-card__pct {
-  grid-column: 1 / -1;
-  justify-self: end;
-  margin-top: 6px;
-  font-family: var(--font-mono);
-  font-size: .7rem;
-  color: var(--ink-dim);
-}
+.reel-card:hover .reel-card__cta svg { transform: translate(2px, -2px); }
 
 .scroll-hint {
   position: absolute;
@@ -805,6 +849,7 @@ html[data-theme="light"] .moon-card__sky {
 .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--line-soft);
@@ -818,6 +863,7 @@ html[data-theme="light"] .moon-card__sky {
 
 .card__thumb {
   position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   aspect-ratio: 8 / 5;
@@ -861,6 +907,31 @@ html[data-theme="light"] .moon-card__sky {
 }
 .card__year { font-family: var(--font-mono); font-size: .72rem; color: var(--ink-dim); }
 .card__title { margin-top: 14px; font-family: var(--font-display); font-size: 1.22rem; font-weight: 600; letter-spacing: -.01em; }
+.card__title-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color .25s;
+}
+/* stretched link: whole card is clickable, thumb + actions stay on top */
+.card__title-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+.card__title-btn:focus-visible { outline: none; }
+.card__title-btn:focus-visible::after {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+.card:hover .card__title-btn { color: var(--brand); }
 .card__desc { margin-top: 8px; font-size: .9rem; color: var(--ink-soft); }
 
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
@@ -872,7 +943,7 @@ html[data-theme="light"] .moon-card__sky {
   color: var(--ink-soft);
 }
 
-.card__actions { display: flex; align-items: center; gap: 18px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+.card__actions { position: relative; z-index: 2; display: flex; align-items: center; gap: 18px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
 .link-btn {
   padding: 0;
   border: 0;
@@ -1244,7 +1315,6 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 }
 @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
 @keyframes spin { to { transform: rotate(360deg); } }
-@keyframes twinkle { 0%, 100% { opacity: .25; } 50% { opacity: .85; } }
 @keyframes drip {
   0% { transform: translateY(-14px); opacity: 0; }
   35% { opacity: 1; }
@@ -1283,8 +1353,8 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 
   .hero { min-height: auto; padding-bottom: 88px; }
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
-  .hero__moon { justify-content: flex-start; }
-  .moon-card { width: min(100%, 320px); }
+  .hero__reel { justify-content: flex-start; }
+  .reel-card { width: min(100%, 300px); }
 
   .stats__grid { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(3) { border-left: 0; }

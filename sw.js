@@ -2,14 +2,13 @@
    sw.js — offline shell
    Hanya didaftarkan di production (https), lihat main.js
    ========================================================= */
-var CACHE = "kavara-portfolio-v3";
+var CACHE = "kavara-portfolio-v4";
 
 var SHELL = [
   "./",
   "index.html",
   "css/style.css",
   "js/main.js",
-  "js/moon.js",
   "js/i18n.js",
   "manifest.webmanifest",
   "assets/favicon.svg",
@@ -17,6 +16,7 @@ var SHELL = [
   "assets/icon-512.png",
   "assets/og-image.jpg",
   "assets/avatar.jpg",
+  "assets/reel-poster.jpg",
   "assets/projects/wcc.svg",
   "assets/projects/wedding-edit.svg",
   "assets/projects/wedding-video.svg",

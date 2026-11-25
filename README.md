@@ -23,10 +23,10 @@ yang memang hanya didaftarkan di HTTPS).
 ├── css/style.css           # token, layout, tema, komponen
 ├── js/
 │   ├── main.js             # nav, tema, bahasa, palette, filter, modal, form
-│   ├── moon.js             # perhitungan fase bulan
 │   └── i18n.js             # kamus ID/EN + frasa typing
 ├── assets/
 │   ├── avatar.jpg          # foto profil (dari CV)
+│   ├── reel-poster.jpg     # poster kartu showreel di hero (720×900)
 │   ├── cv.pdf              # CV asli
 │   ├── favicon.svg
 │   ├── icon-192.png        # ikon PWA / iOS
@@ -57,6 +57,7 @@ yang memang hanya didaftarkan di HTTPS).
 |---|---|
 | `ardinuariangga@gmail.com` | Email baru (`index.html` **dan** `const EMAIL` di `js/main.js`) |
 | `assets/avatar.jpg` | Foto profil baru (rasio 1:1) |
+| `assets/reel-poster.jpg` | Poster kartu showreel (rasio 4:5, misal 720×900) |
 | `assets/cv.pdf` | CV terbaru (nama file tetap) |
 | `assets/projects/*.svg` | Screenshot project (rasio 8:5, misal 800×500) |
 | `assets/og-image.jpg` | Gambar share 1200×630 |

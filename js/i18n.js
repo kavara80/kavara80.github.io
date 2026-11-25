@@ -26,7 +26,9 @@
       "hero.tagline": "Saya merangkai momen jadi cerita lewat visual — video wedding, konten media sosial, dan desain yang bikin orang berhenti scroll.",
       "hero.ctaProjects": "Lihat Karya",
       "hero.ctaCv": "Download CV",
-      "hero.moon": "Blue moon malam ini",
+      "hero.reel": "Lihat showreel",
+      "hero.reelTitle": "Showreel 2026",
+      "hero.reelCta": "Tonton",
       "hero.scroll": "Scroll",
 
       "stats.years": "Tahun pengalaman",
@@ -189,7 +191,9 @@
       "hero.tagline": "I turn moments into stories through visuals — wedding films, social content, and design that makes people stop scrolling.",
       "hero.ctaProjects": "View Work",
       "hero.ctaCv": "Download CV",
-      "hero.moon": "Blue moon tonight",
+      "hero.reel": "Watch the showreel",
+      "hero.reelTitle": "Showreel 2026",
+      "hero.reelCta": "Play",
       "hero.scroll": "Scroll",
 
       "stats.years": "Years of experience",
