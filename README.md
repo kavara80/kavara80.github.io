@@ -26,8 +26,11 @@ yang memang hanya didaftarkan di HTTPS).
 │   └── i18n.js             # kamus ID/EN + frasa typing
 ├── assets/
 │   ├── avatar.jpg          # foto profil (dari CV)
+│   ├── bg-hero.jpg         # latar langit malam di hero (1120×530)
+│   ├── moon.png            # bulan sabit transparan (380×371)
 │   ├── reel-poster.jpg     # poster kartu showreel di hero (720×900)
 │   ├── cv.pdf              # CV asli
+│   ├── fonts/              # Lemon Milk (Light/Regular/Medium/Bold .otf)
 │   ├── favicon.svg
 │   ├── icon-192.png        # ikon PWA / iOS
 │   ├── icon-512.png
@@ -87,6 +90,29 @@ Warna diatur lewat token di `css/style.css`:
 
 Ganti tiga nilai itu (versi dark dan light) untuk mengubah seluruh aksen situs.
 
+### Tipografi
+
+- **Judul & teks tebal** → `Lemon Milk` (self-hosted di `assets/fonts/`).
+  Versi gratisnya hanya punya huruf kapital, jadi semua judul otomatis
+  uppercase dengan letter-spacing lebar.
+- **Body & paragraf** → `Inter` (Google Fonts).
+
+Kalau ganti font judul, cukup ubah `--font-display` dan blok `@font-face`
+di bagian atas `css/style.css`.
+
+### Cache & service worker
+
+CSS/JS di-*cache* oleh service worker, jadi setiap kali mengubah
+`css/style.css` atau file di `js/`:
+
+1. Naikkan angka versi di `index.html` — `css/style.css?v=5` → `?v=6`
+   (sama untuk `js/i18n.js` dan `js/main.js`).
+2. Naikkan `CACHE = "kavara-portfolio-v5"` di `sw.js` → `v6`.
+3. Kalau ada aset gambar/font baru, tambahkan juga ke array `SHELL` di `sw.js`.
+
+Kalau langkah ini dilewati, pengunjung lama bisa melihat campuran CSS lama
+dan HTML baru (layout berantakan) sampai cache mereka kedaluwarsa.
+
 ## Deploy ke GitHub Pages
 
 Repo: `kavara80/kavara80.github.io` — Settings → Pages → Deploy from a branch → `main` / root.
@@ -100,5 +126,8 @@ git push
 ## Catatan
 
 - Service worker hanya didaftarkan di HTTPS, supaya cache tidak mengganggu saat development.
+- Aset dilayani *stale-while-revalidate*: cepat dari cache, tapi tetap diperbarui di latar belakang.
 - Animasi dimatikan otomatis saat `prefers-reduced-motion: reduce`.
 - `.reveal` punya jaring pengaman: kalau `main.js` gagal dimuat, konten tetap terlihat.
+- Font **Lemon Milk** dari [fontkong](https://www.fontkong.com/) — gratis untuk pemakaian
+  pribadi; untuk komersial sebaiknya donasi/lisensi ke pembuatnya.

@@ -2,14 +2,14 @@
    sw.js — offline shell
    Hanya didaftarkan di production (https), lihat main.js
    ========================================================= */
-var CACHE = "kavara-portfolio-v4";
+var CACHE = "kavara-portfolio-v5";
 
 var SHELL = [
   "./",
   "index.html",
-  "css/style.css",
-  "js/main.js",
-  "js/i18n.js",
+  "css/style.css?v=5",
+  "js/main.js?v=5",
+  "js/i18n.js?v=5",
   "manifest.webmanifest",
   "assets/favicon.svg",
   "assets/icon-192.png",
@@ -17,6 +17,12 @@ var SHELL = [
   "assets/og-image.jpg",
   "assets/avatar.jpg",
   "assets/reel-poster.jpg",
+  "assets/bg-hero.jpg",
+  "assets/moon.png",
+  "assets/fonts/LEMONMILK-Light.otf",
+  "assets/fonts/LEMONMILK-Regular.otf",
+  "assets/fonts/LEMONMILK-Medium.otf",
+  "assets/fonts/LEMONMILK-Bold.otf",
   "assets/projects/wcc.svg",
   "assets/projects/wedding-edit.svg",
   "assets/projects/wedding-video.svg",
@@ -72,15 +78,19 @@ self.addEventListener("fetch", function (event) {
     return;
   }
 
-  // Aset: cache first, lalu network
+  // Aset: tampilkan cache dulu, tapi tetap ambil versi baru di belakang
+  // (stale-while-revalidate) supaya update CSS/JS/gambar tidak tertahan.
   event.respondWith(
     caches.match(request).then(function (hit) {
-      if (hit) return hit;
-      return fetch(request).then(function (response) {
-        var copy = response.clone();
-        caches.open(CACHE).then(function (cache) { cache.put(request, copy); });
+      var network = fetch(request).then(function (response) {
+        if (response && response.ok) {
+          var copy = response.clone();
+          caches.open(CACHE).then(function (cache) { cache.put(request, copy); });
+        }
         return response;
-      });
+      }).catch(function () { return hit; });
+
+      return hit || network;
     })
   );
 });
