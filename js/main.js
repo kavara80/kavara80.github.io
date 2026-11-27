@@ -455,36 +455,92 @@
   /* ---------------- project modal ---------------- */
   var modal = $("#projectModal");
   var modalImg = $("#modalImg");
+  var modalVideo = $("#modalVideo");
   var modalTag = $("#modalTag");
   var modalTitle = $("#modalTitle");
   var modalContent = $("#modalContent");
 
+  // Ubah link video jadi player. Mendukung YouTube, Vimeo, Shorts,
+  // dan file video lokal (.mp4 / .webm / .mov).
+  function buildVideo(url, titleText, posterSrc) {
+    var yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/))([A-Za-z0-9_-]{11})/);
+    var vm = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+    var el;
+
+    if (yt || vm) {
+      el = document.createElement("iframe");
+      el.src = yt
+        ? "https://www.youtube-nocookie.com/embed/" + yt[1] + "?rel=0&modestbranding=1"
+        : "https://player.vimeo.com/video/" + vm[1] + "?dnt=1";
+      el.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; fullscreen");
+      el.setAttribute("allowfullscreen", "");
+      el.setAttribute("title", titleText || "Video");
+    } else if (/\.(mp4|webm|mov)(\?|$)/i.test(url)) {
+      el = document.createElement("video");
+      el.src = url;
+      el.controls = true;
+      el.playsInline = true;
+      el.preload = "metadata";
+      if (posterSrc) el.setAttribute("poster", posterSrc);
+    } else {
+      // URL embed lain (misal Drive preview) — biarkan apa adanya
+      el = document.createElement("iframe");
+      el.src = url;
+      el.setAttribute("allowfullscreen", "");
+      el.setAttribute("title", titleText || "Video");
+    }
+    return el;
+  }
+
+  function clearVideo() {
+    if (!modalVideo) return;
+    modalVideo.innerHTML = "";
+    modalVideo.hidden = true;
+  }
+
+  function openProject(card) {
+    if (!card || !modal) return;
+
+    var img = card.querySelector(".card__thumb img");
+    var tag = card.querySelector(".tag");
+    var title = card.querySelector(".card__title");
+    var template = card.querySelector("template.project-detail");
+    var videoUrl = card.getAttribute("data-video");
+
+    clearVideo();
+
+    if (videoUrl && modalVideo) {
+      if (modalImg) modalImg.hidden = true;
+      modalVideo.appendChild(buildVideo(videoUrl, title ? title.textContent : "", img ? img.getAttribute("src") : ""));
+      modalVideo.hidden = false;
+    } else {
+      if (modalImg) {
+        modalImg.hidden = false;
+        modalImg.src = img ? img.getAttribute("src") : "";
+        modalImg.alt = img ? (img.getAttribute("alt") || "") : "";
+      }
+    }
+
+    if (tag && modalTag) modalTag.textContent = tag.textContent;
+    if (title && modalTitle) modalTitle.textContent = title.textContent;
+
+    if (modalContent) {
+      modalContent.innerHTML = "";
+      if (template && template.content) {
+        modalContent.appendChild(template.content.cloneNode(true));
+      }
+      applyI18n(modalContent);
+    }
+
+    if (!modal.open) modal.showModal();
+  }
+
+  // Tandai card yang punya video supaya ikon zoom berubah jadi tombol play
+  $$(".card[data-video]").forEach(function (card) { card.classList.add("is-video"); });
+
   $$("[data-open-project]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var card = btn.closest(".card");
-      if (!card || !modal) return;
-
-      var img = card.querySelector(".card__thumb img");
-      var tag = card.querySelector(".tag");
-      var title = card.querySelector(".card__title");
-      var template = card.querySelector("template.project-detail");
-
-      if (img && modalImg) {
-        modalImg.src = img.getAttribute("src");
-        modalImg.alt = img.getAttribute("alt") || "";
-      }
-      if (tag && modalTag) modalTag.textContent = tag.textContent;
-      if (title && modalTitle) modalTitle.textContent = title.textContent;
-
-      if (modalContent) {
-        modalContent.innerHTML = "";
-        if (template && template.content) {
-          modalContent.appendChild(template.content.cloneNode(true));
-        }
-        applyI18n(modalContent);
-      }
-
-      if (!modal.open) modal.showModal();
+      openProject(btn.closest(".card"));
     });
   });
 
@@ -496,6 +552,7 @@
   });
 
   if (modal) {
+    modal.addEventListener("close", clearVideo);
     modal.addEventListener("click", function (event) {
       var rect = modal.getBoundingClientRect();
       var outside = event.clientX < rect.left || event.clientX > rect.right ||
@@ -511,6 +568,13 @@
 
   $$("[data-lightbox]").forEach(function (btn) {
     btn.addEventListener("click", function () {
+      // Kalau card-nya punya video, klik thumbnail buka modal + player
+      var videoCard = btn.closest(".card[data-video]");
+      if (videoCard) {
+        openProject(videoCard);
+        return;
+      }
+
       var src = btn.getAttribute("data-lightbox");
       var caption = btn.getAttribute("data-caption") || "";
       if (!src || !lightbox) return;

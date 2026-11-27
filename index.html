@@ -55,7 +55,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="css/style.css?v=5" />
+<link rel="stylesheet" href="css/style.css?v=6" />
 
 <script type="application/ld+json">
 {
@@ -688,7 +688,10 @@
   <button class="modal__close" type="button" data-close-modal data-i18n-aria="modal.close" aria-label="Tutup">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
   </button>
-  <div class="modal__media"><img id="modalImg" alt="" /></div>
+  <div class="modal__media">
+    <img id="modalImg" alt="" />
+    <div class="modal__video" id="modalVideo" hidden></div>
+  </div>
   <div class="modal__body">
     <span class="tag" id="modalTag"></span>
     <h3 class="modal__title" id="modalTitle"></h3>
@@ -707,7 +710,7 @@
 
 <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
 
-<script src="js/i18n.js?v=5" defer></script>
-<script src="js/main.js?v=5" defer></script>
+<script src="js/i18n.js?v=6" defer></script>
+<script src="js/main.js?v=6" defer></script>
 </body>
 </html>
